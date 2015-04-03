@@ -1,0 +1,11 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+[user]
+  name = 
+  email = 
+[color]
+  ui = auto
+[push]
+  default = simple

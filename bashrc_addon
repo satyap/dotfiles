@@ -1,0 +1,64 @@
+# .bashrc
+
+# User specific aliases and functions
+
+# Source global definitions
+if [ -f /etc/bash.bashrc ]; then
+  . /etc/bash.bashrc
+fi
+
+alias ls="ls -p --time-style=long-iso"
+alias which="type -path"
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+alias l="ls -lp"
+alias gcc='gcc -Wall -ansi -pedantic'
+
+export EDITOR=vi
+export VISUAL=vi
+
+# bash history: ignore lines beginning with space, and ignore dups
+export HISTCONTROL=ignoreboth
+
+export LESSOPEN=""
+
+#spell() { grep -i $* /usr/dict/words }
+
+#alias xt='xterm -s -vb -bg black -fg white -rv'
+
+#source ~/.aliases
+
+alias g=git
+alias gs='g status'
+
+if [ "$PS1" ]; then
+  PS1="[\u@\h]\w\\$ "
+  case $TERM in
+    xterm*)
+      if [ -e /etc/sysconfig/bash-prompt-xterm ]; then
+        PROMPT_COMMAND=/etc/sysconfig/bash-prompt-xterm
+      else
+        PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+      fi
+      ;;
+    screen)
+      if [ -e /etc/sysconfig/bash-prompt-screen ]; then
+        PROMPT_COMMAND=/etc/sysconfig/bash-prompt-screen
+      else
+        PROMPT_COMMAND='echo -ne "\033_${HOSTNAME%%.*}:${PWD/#$HOME/~}\033\\"'
+      fi
+      ;;
+    *)
+      [ -e /etc/sysconfig/bash-prompt-default ] && PROMPT_COMMAND=/etc/sysconfig/bash-prompt-default
+      ;;
+
+  esac
+fi
+
+
+alias vncdisplay='export DISPLAY=0:1'
+alias realdisplay='export DISPLAY=:0.0'
+
+#alias scattach="sh grabssh; screen -d -R"
+[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
