@@ -2,6 +2,8 @@
   co = checkout
   ci = commit
   st = status
+  ds = diff --staged
+  bn = rev-parse --abbrev-ref HEAD
 [user]
   name = 
   email = 
@@ -9,3 +11,6 @@
   ui = auto
 [push]
   default = simple
+[core]
+  excludesfile = ~/.gitignore_global
+
