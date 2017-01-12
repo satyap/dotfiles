@@ -1,1 +1,2 @@
 hardstatus alwayslastline "%{=b}%{G}%H: %{C}%w %=%{G}%D, %m/%d %C%a"
+zombie KR
