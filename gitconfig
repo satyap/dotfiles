@@ -3,6 +3,7 @@
   ci = commit
   st = status
   ds = diff --staged
+  br = branch
   bn = rev-parse --abbrev-ref HEAD
 [user]
   name = 
