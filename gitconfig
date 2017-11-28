@@ -5,6 +5,7 @@
   ds = diff --staged
   br = branch
   bn = rev-parse --abbrev-ref HEAD
+  reba = rebase origin/master
 [user]
   name = 
   email = 
