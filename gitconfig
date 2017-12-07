@@ -6,6 +6,7 @@
   br = branch
   bn = rev-parse --abbrev-ref HEAD
   reba = rebase origin/master
+  doga = log --decorate --oneline --graph --all
 [user]
   name = 
   email = 
