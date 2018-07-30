@@ -1,5 +1,6 @@
 [alias]
   co = checkout
+  c-p = cherry-pick
   ci = commit
   st = status
   ds = diff --staged
