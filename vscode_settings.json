@@ -1,0 +1,24 @@
+{
+  "files.autoSave": "onFocusChange",
+  "go.formatTool": "gofmt",
+  "breadcrumbs.enabled": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "go.autocompleteUnimportedPackages": true,
+  "window.zoomLevel": 0,
+  "editor.showFoldingControls": "always",
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "html.format.wrapLineLength": 0,
+  "files.exclude": {
+    "**/*.pyc": true,
+    "__pycache__": true,
+    ".cache": true,
+    ".pytest_cache": true
+  },
+  "editor.formatOnSave": true,
+  "python.pythonPath": "${workspaceRoot}/.venv3/bin/python3",
+  "python.unitTest.unittestEnabled": true,
+  "extensions.autoUpdate": false,
+  "editor.minimap.enabled": false,
+  "workbench.settings.openDefaultSettings": true,
+  "editor.renderWhitespace": "boundary",
+}
