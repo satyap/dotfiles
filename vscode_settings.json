@@ -2,11 +2,12 @@
   "files.autoSave": "onFocusChange",
   "go.formatTool": "gofmt",
   "breadcrumbs.enabled": true,
-  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiCursorModifier": "alt",
   "go.autocompleteUnimportedPackages": true,
   "window.zoomLevel": 0,
   "editor.showFoldingControls": "always",
   "go.useCodeSnippetsOnFunctionSuggest": true,
+  "go.useLanguageServer": true,
   "html.format.wrapLineLength": 0,
   "files.exclude": {
     "**/*.pyc": true,
@@ -21,4 +22,6 @@
   "editor.minimap.enabled": false,
   "workbench.settings.openDefaultSettings": true,
   "editor.renderWhitespace": "boundary",
+  "terraform.path": "/usr/local/bin/terraform",
+  "editor.quickSuggestionsDelay": 1000,
 }
