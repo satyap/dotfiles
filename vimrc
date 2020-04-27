@@ -1,4 +1,4 @@
-set tabstop=4 shiftwidth=4 expandtab
+set tabstop=2 shiftwidth=2 expandtab
 syntax on
 filetype indent on
 set ruler
@@ -14,7 +14,7 @@ let spell_auto_type = "tex,mail,text,html,tmpl,sgml,otl,cvs,none,txt"
 if has("autocmd")
   " In text files, always limit the width of text to 78 characters
   autocmd BufRead *.txt set tw=78
-  autocmd BufRead *.rb set ts=2 sw=2
+  autocmd BufRead *.py set ts=4 sw=4
   autocmd BufRead /tmp/mutt-* set tw=78
   autocmd BufRead *.0 set tw=78
   " tmpl files are usually html
