@@ -1,4 +1,3 @@
-
 alias ls="ls -p --time-style=long-iso"
 alias which="type -path"
 alias rm="rm -i"
@@ -6,6 +5,10 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias l="ls -lp"
 alias gcc='gcc -Wall -ansi -pedantic'
+alias tf=terraform
+alias d=docker
+alias di='docker image'
+alias dc='docker container'
 
 export EDITOR=vi
 export VISUAL=vi
