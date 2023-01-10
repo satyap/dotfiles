@@ -1,6 +1,7 @@
 # Editor Droppings #
 ####################
 .idea
+*.swp
 
 # OS generated files #
 ######################
@@ -17,4 +18,3 @@ TAGS
 tags
 !tags/
 
-*.swp
